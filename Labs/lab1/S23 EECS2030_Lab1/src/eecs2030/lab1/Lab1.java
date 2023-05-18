@@ -117,11 +117,10 @@ public class Lab1 {
 	 *      find and use all the constants needed</a>
 	 */
 	public static double terminalVelocity(double mass, double area, double c_d) {
-		final double AIR_DENSITY = 1.2;
-		final double GRAVITY_ACC = 9.77637;
-		final double A_G =7.5844295185;
+		final double AIR_DENSITY = 1.2929977101;
+		final double GRAVITY_ACC = 9.80665;
 		double result = 0.0;
-		result = java.lang.Math.sqrt(2*mass*A_G/(area*c_d));
+		result = java.lang.Math.sqrt(2*mass*GRAVITY_ACC/(AIR_DENSITY*area*c_d));
 		return result;
 	}
 
