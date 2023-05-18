@@ -77,7 +77,7 @@ public class Lab1 {
 	 *         last or third last digits are 0
 	 */
 	public static byte secondByte(int n) {
-		return (byte) ((n & 0x0000FF00)/0xFF);
+		return (byte) ((n & 0x0000FF00) >> 8);
 	}
 
 	/**
@@ -117,7 +117,12 @@ public class Lab1 {
 	 *      find and use all the constants needed</a>
 	 */
 	public static double terminalVelocity(double mass, double area, double c_d) {
-		return 0;
+		final double AIR_DENSITY = 1.2;
+		final double GRAVITY_ACC = 9.77637;
+		final double A_G =7.5844295185;
+		double result = 0.0;
+		result = java.lang.Math.sqrt(2*mass*A_G/(area*c_d));
+		return result;
 	}
 
 	/**
@@ -128,7 +133,7 @@ public class Lab1 {
 	 * @return true if x is even and false otherwise
 	 */
 	public static boolean isEven(int x) {
-		return true;
+		return x % 2 == 0;
 	}
 
 	/**
@@ -142,7 +147,7 @@ public class Lab1 {
 	 *         and false otherwise
 	 */
 	public static boolean isUnitVector(double x, double y) {
-		return false;
+		return java.lang.Math.pow(x, 2) + java.lang.Math.pow(y, 2) == 1;
 	}
 
 	/**
@@ -154,7 +159,10 @@ public class Lab1 {
      *           if x is not a 9-digit number.
      */
 	public static boolean enrolStudent(int studentNumber) {
-        return false;
+		if (!(java.lang.Integer.toString(studentNumber).length() == 9)) {
+			throw new BadSIDException();
+		}
+        return true;
 	}
 
 	
@@ -164,7 +172,7 @@ public class Lab1 {
 	 * @return the string equal to Lab1.COURSE_NAME
 	 */
 	public static String getCourseName() {
-		return null;
+		return COURSE_NAME;
 	}
 
 	/**
@@ -177,11 +185,11 @@ public class Lab1 {
 	 * @param s
 	 *            a string of length 1 or greater
 	 * @return the middle character of s
-	 * @throws IllegalArgumentException
-	 *             if s is empty
+	 * @throws IllegalArgmpumentException
+	 *             if s is ety
 	 */
 	public static char middleChar(String s) {
-		return 'a';
+		return s.charAt((s.length() +1) / 2 -1);
 	}
 
 	/**
@@ -210,7 +218,16 @@ public class Lab1 {
 	 * @return the string formed by alternating the case of the characters in s
 	 */
 	public static String alternatingCaps(String s) {
-		return "";
+		StringBuilder alCaps = new StringBuilder();
+		for (int i=0; i<s.length(); i++){
+			char c = s.charAt(i);
+			if ( i%2 != 0 ){
+				alCaps.append(Character.toLowerCase(c));
+			}else {
+				alCaps.append(Character.toUpperCase(c));
+			}
+		}
+		return alCaps.toString();
 	}
 
 }
