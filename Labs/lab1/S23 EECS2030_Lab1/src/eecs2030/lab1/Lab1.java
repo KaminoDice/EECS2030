@@ -51,7 +51,7 @@ public class Lab1 {
 	 *         if n is less than 1000
 	 */
 	public static int removeLastThreeDigits(int n) {
-		return n/1000;
+		return n / 1000;
 	}
 
 	/**
@@ -66,7 +66,7 @@ public class Lab1 {
 	 *         last or third last digits are 0
 	 */
 	public static int lastThreeDigits(int n) {
-		return n-1000*removeLastThreeDigits(n);
+		return n - 1000 * removeLastThreeDigits(n);
 	}
 
 	/**
@@ -93,10 +93,10 @@ public class Lab1 {
 	 */
 	public static double avg(int a, int b, int c) {
 		double result = 0.0;
-		result +=a;
-		result +=b;
-		result +=c;
-		return result/3;
+		result += a;
+		result += b;
+		result += c;
+		return result / 3;
 	}
 
 	/**
@@ -117,10 +117,10 @@ public class Lab1 {
 	 *      find and use all the constants needed</a>
 	 */
 	public static double terminalVelocity(double mass, double area, double c_d) {
-		final double AIR_DENSITY = 1.2929977101;
+		final double AIR_DENSITY = 1.293;
 		final double GRAVITY_ACC = 9.80665;
 		double result = 0.0;
-		result = java.lang.Math.sqrt(2*mass*GRAVITY_ACC/(AIR_DENSITY*area*c_d));
+		result = java.lang.Math.sqrt(2 * mass * GRAVITY_ACC / (AIR_DENSITY * area * c_d));
 		return result;
 	}
 
@@ -161,10 +161,10 @@ public class Lab1 {
 		if (!(java.lang.Integer.toString(studentNumber).length() == 9)) {
 			throw new BadSIDException();
 		}
-        return true;
+		return true;
 	}
 
-	
+
 	/**
 	 * Returns the course name as the string.
 	 * 
@@ -188,7 +188,7 @@ public class Lab1 {
 	 *             if s is ety
 	 */
 	public static char middleChar(String s) {
-		return s.charAt((s.length() +1) / 2 -1);
+		return s.charAt((s.length() + 1) / 2 - 1);
 	}
 
 	/**
@@ -218,11 +218,11 @@ public class Lab1 {
 	 */
 	public static String alternatingCaps(String s) {
 		StringBuilder alCaps = new StringBuilder();
-		for (int i=0; i<s.length(); i++){
+		for (int i = 0; i < s.length(); i++) {
 			char c = s.charAt(i);
-			if ( i%2 != 0 ){
+			if (i % 2 != 0) {
 				alCaps.append(Character.toLowerCase(c));
-			}else {
+			} else {
 				alCaps.append(Character.toUpperCase(c));
 			}
 		}
