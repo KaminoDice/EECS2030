@@ -8,6 +8,8 @@ import org.junit.Test;
 import org.junit.rules.Timeout;
 import org.junit.runners.MethodSorters;
 
+import junit.framework.Assert;
+
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class TestLab2 {
 
@@ -45,6 +47,7 @@ public class TestLab2 {
 		System.out.println("Expected:");
 		System.out.println(encryptedText);
 		assertTrue(Encryption.encrypt(plainText, encryptionKey).equals(encryptedText));
+		//assertEquals(Encryption.encrypt(plainText, encryptionKey), encryptedText);
 	}
 
 	@Test
@@ -53,5 +56,6 @@ public class TestLab2 {
 		System.out.println("Expected:");
 		System.out.println(decryptedText);
 		assertTrue(Encryption.decrypt(encryptedText, encryptionKey).equals(decryptedText));
+		//assertEquals(Encryption.decrypt(encryptedText, encryptionKey), decryptedText);
 	}
 }
