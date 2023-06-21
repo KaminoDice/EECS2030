@@ -22,3 +22,13 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+Lecture/01 Intro.pdf
+Lecture/02 More on Classes.pdf
+Lecture/03 equals,hashCode,compareTo.pdf
+Lecture/04 JUnit, Information hiding, Static features.pdf
+Lecture/05 Utility classes, Interfaces.pdf
+Lecture/05.2 JCF.pdf
+Lecture/book.pdf
+Lecture/EECS 2030 A S23 outline v1.pdf
+References/*.pdf
+
