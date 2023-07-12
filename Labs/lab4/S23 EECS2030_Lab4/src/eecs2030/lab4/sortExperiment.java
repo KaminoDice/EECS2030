@@ -12,7 +12,7 @@ public class sortExperiment {
 		long start, end;
 
 		//You might need to change the 1M value to something smaller for other sorts
-		// -Xss1024M to ignore the stack limit when test the Recursive Insertion method.
+		// -Xss32M to ignore the stack limit when test the Recursive Insertion method.
 		for (int i = 1000; i <= 1_000_000; i *= 2){ 
 			list = createRandomList(i); 
 			start = System.nanoTime();
@@ -20,11 +20,13 @@ public class sortExperiment {
 			end = System.nanoTime();
 			System.out.println("N=" + i + "\n Built-in mergesort, Time spent: " + (end - start)/1e6 + " ms");
 			
+			list = createRandomList(i); 
 			start = System.nanoTime();
             Lists.insertionSortIterative(list);
             end = System.nanoTime();
             System.out.println("Insertion-Iterative, Time spent: " + (end - start) / 1e6 + " ms");
 
+            list = createRandomList(i); 
             start = System.nanoTime();
             Lists.insertionSortRecursive(list);
             end = System.nanoTime();

@@ -1,40 +1,40 @@
 N=1000
- Built-in mergesort, Time spent: 1.3789 ms
-Insertion-Iterative, Time spent: 0.2723 ms
-Insertion-Recursive, Time spent: 0.2087 ms
+ Built-in mergesort, Time spent: 1.4092 ms
+Insertion-Iterative, Time spent: 8.3323 ms
+Insertion-Recursive, Time spent: 3.9273 ms
 N=2000
- Built-in mergesort, Time spent: 1.3433 ms
-Insertion-Iterative, Time spent: 0.2341 ms
-Insertion-Recursive, Time spent: 0.0954 ms
+ Built-in mergesort, Time spent: 1.3858 ms
+Insertion-Iterative, Time spent: 18.4249 ms
+Insertion-Recursive, Time spent: 2.9206 ms
 N=4000
- Built-in mergesort, Time spent: 2.2623 ms
-Insertion-Iterative, Time spent: 0.4274 ms
-Insertion-Recursive, Time spent: 0.1773 ms
+ Built-in mergesort, Time spent: 2.4384 ms
+Insertion-Iterative, Time spent: 9.129 ms
+Insertion-Recursive, Time spent: 11.5774 ms
 N=8000
- Built-in mergesort, Time spent: 2.1831 ms
-Insertion-Iterative, Time spent: 0.8393 ms
-Insertion-Recursive, Time spent: 0.2326 ms
+ Built-in mergesort, Time spent: 2.1944 ms
+Insertion-Iterative, Time spent: 36.4579 ms
+Insertion-Recursive, Time spent: 48.0443 ms
 N=16000
- Built-in mergesort, Time spent: 2.7862 ms
-Insertion-Iterative, Time spent: 1.7998 ms
-Insertion-Recursive, Time spent: 0.3543 ms
+ Built-in mergesort, Time spent: 2.8801 ms
+Insertion-Iterative, Time spent: 148.5261 ms
+Insertion-Recursive, Time spent: 231.1804 ms
 N=32000
- Built-in mergesort, Time spent: 5.8625 ms
-Insertion-Iterative, Time spent: 3.4905 ms
-Insertion-Recursive, Time spent: 2.1198 ms
+ Built-in mergesort, Time spent: 6.0075 ms
+Insertion-Iterative, Time spent: 918.0312 ms
+Insertion-Recursive, Time spent: 1008.6554 ms
 N=64000
- Built-in mergesort, Time spent: 12.8676 ms
-Insertion-Iterative, Time spent: 1.2955 ms
-Insertion-Recursive, Time spent: 1.6783 ms
+ Built-in mergesort, Time spent: 7.6499 ms
+Insertion-Iterative, Time spent: 3229.7584 ms
+Insertion-Recursive, Time spent: 4393.0264 ms
 N=128000
- Built-in mergesort, Time spent: 19.8226 ms
-Insertion-Iterative, Time spent: 0.8105 ms
-Insertion-Recursive, Time spent: 3.3368 ms
+ Built-in mergesort, Time spent: 17.3934 ms
+Insertion-Iterative, Time spent: 14156.7269 ms
+Insertion-Recursive, Time spent: 23491.6117 ms
 N=256000
- Built-in mergesort, Time spent: 36.9341 ms
-Insertion-Iterative, Time spent: 1.3442 ms
-Insertion-Recursive, Time spent: 8.0047 ms
+ Built-in mergesort, Time spent: 37.2525 ms
+Insertion-Iterative, Time spent: 75363.8517 ms
+Insertion-Recursive, Time spent: 102786.6221 ms
 N=512000
- Built-in mergesort, Time spent: 78.6802 ms
-Insertion-Iterative, Time spent: 3.9216 ms
-Insertion-Recursive, Time spent: 19.2864 ms
+ Built-in mergesort, Time spent: 79.92 ms
+Insertion-Iterative, Time spent: 269932.4869 ms
+Insertion-Recursive, Time spent: 656282.868 ms
