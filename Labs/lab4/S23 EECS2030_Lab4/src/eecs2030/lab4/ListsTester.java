@@ -15,7 +15,7 @@ public class ListsTester {
 
 	@Test
 	public void test01_defaultSort() {
-		List <Integer> list = createRandomList(100);
+		List <Integer> list = createRandomList(1000);
 
 		Lists.defaultSort(list);
 
@@ -25,7 +25,7 @@ public class ListsTester {
 
 	@Test
 	public void test02_insertionSortRecursive() {
-		List <Integer> list = createRandomList(100);
+		List <Integer> list = createRandomList(1000);
 
 		Lists.insertionSortRecursive(list);
 
@@ -35,7 +35,7 @@ public class ListsTester {
 
 	@Test
 	public void test03_insertionSortIterative() {
-		List <Integer> list = createRandomList(100);
+		List <Integer> list = createRandomList(1000);
 
 		Lists.insertionSortIterative(list);
 
