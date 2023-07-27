@@ -1,6 +1,7 @@
+import java.util.Objects;
 
 /**
- * @author 2030 student [add your name and student number here]
+ * @author 2030 student [Huanrui Cao, 219256809]
  *
  * The class should implement an item describing a line on an invoice: 
  * a product (including its name and price), and the quantity, as an integer 
@@ -38,4 +39,80 @@
 
 public class InvoiceItem {
 	//TODO
+	private final Product product;
+    private int quantity;
+    private final double originalPrice;
+
+    /**
+	 * Initializes an invoice item line with 
+	 * the specified product and quantity.
+	 */
+    public InvoiceItem(Product product, int quantity) {
+        this.product = product;
+        this.quantity = quantity;
+        this.originalPrice = product.getPrice();
+    }
+
+    /**
+     * Return the product of this invoice item.
+     * @return the product of this invoice item
+     * @throws CloneNotSupportedException 
+     */
+    public Product getProduct() {
+    	Product pClone = new Product(product.getName(), this.originalPrice);
+        return pClone;
+    }
+
+    /**
+     * Return the quantity of this invoice item.
+     * @return the quantity of this invoice item
+     */
+    public int getQuantity() {
+        return quantity;
+    }
+
+    /**
+     * Set the quantity of this invoice item.
+     * @param quantity
+     */
+    public void setQuantity(int quantity) {
+        this.quantity = quantity;
+    }
+
+    /**
+     * Return the cost of this invoice item.
+     * @return
+     */
+    public double getTotal() {
+        return this.originalPrice * quantity;
+    }
+
+    /**
+	 * Returns a string representation of this invoice item. 
+	 * 
+	 * @return a string representation of the invoice item
+	 */
+    @Override
+    public String toString() {
+        return product.getName() + ", price=" + String.format("%.2f", this.originalPrice) + ", quantity=" + quantity;
+    }
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(product, quantity);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		InvoiceItem other = (InvoiceItem) obj;
+		return Objects.equals(product, other.product) && quantity == other.quantity;
+	}
+    
+    
 }
