@@ -1,0 +1,114 @@
+0.66, 1, 0, 1, 0, 0, 0, 1, 2, 2, 1.25, 2
+Multiple-Choice or Similar Questions (8 questions, 1 point each) 
+NOTE: where more than one choice is available, there are penalties for extraneous choices selected 
+
+Q1.	Which of the following are NOT the properties of the object-oriented programming approach to programming?
+A.	OOP makes unit testing possible
+B.	object-oriented languages are faster than the non-object-oriented ones
+C.	storing data in objects results in memory savings
+D.	objects can store their own state and the possible operations in one place 
+E.	objects can limit the range of operations that can be performed on their data
+
+Q1 Answer (one or more): BC
+
+
+Q2.	Which of the following is/are proper way(s) to include a commonly known physical constant in a class?
+A.	public final static float BOLTZMANN_CONSTANT = 1.380649e-23f;
+B.	private static double BOLTZMANN_CONSTANT = 1.380649e-23;
+C.	private final static double BoltzmannConstant = 1.380649e-23;
+D.	public final static double BOLTZMANN_CONSTANT = 1.380649e-23;
+E.	public final static float BOLTZMANN_CONSTANT = 1.380649e-23;
+F.	public final static double BoltzmannConstant = 1.380649e-23;
+G.	public final double BOLTZMANN_CONSTANT = 1.380649e-23;
+
+Q2 Answer (one or more): AD
+
+
+Q3.	Which of the following are valid variables of reference types?
+A.	String s = "c";
+B.	byte [] d = {};
+C.	double [] abc = {123.0, 2.1, 13.0};
+D.	Char c = 'c';
+E.	boolean b = true;
+
+Q3 Answer (one or more): DE
+
+
+Q4.	Which of the following statements regarding class constructors in Java are true?
+A.	a class can have more than one constructor, as long as their names are different
+B.	every class has a public no-parameter constructor
+C.	constructors must be public
+D.	none of the above statements are true
+
+Q4 Answer (one or more): D
+
+
+Q5.	What is a class invariant?
+A.	A condition that should be true at any point during the class's or object's existence
+B.	A condition that should be true after a public constructor finishes running
+C.	A condition that should be true immediately after any public constructor or method finishes running
+D.	A condition that should be true immediately after any constructor or method finishes running
+
+Q5 Answer (one choice): D
+
+
+Q6.	One of the program's preconditions is violated. Which one of the following describes the situation best?
+A.	The program must still produce a correct result
+B.	The program may produce an incorrect result
+C.	The program will crash
+D.	The program should do its best to produce a correct result
+E.	none of the above
+
+Q6 Answer (one choice): C
+
+
+Q7.	For a method to have the same name as the name of the class ...
+A.	will make that method a constructor
+B.	will generate a compilation error
+C.	is syntactically legal, but will usually result in a runtime error
+D.	will result in shadowing
+E.	none of the above
+
+Q7 Answer (one choice): C
+
+
+Q8.	Suppose that you are implementing a class named Muffin. What would be a header for the Muffin copy constructor 
+(assume that the constructor has public access)?
+A.	public Muffin()
+B.	public void Muffin()
+C.	public Muffin(Muffin other)
+D.	public void Muffin(Muffin other)
+E.	public Muffin Muffin(Muffin other)
+
+Q8 Answer (one choice): C
+
+------------------------------------------------------------------------------------------
+Short-answer Questions (4 questions, 2 points each)
+
+Q9.	(2 points) What would happen if the methods equals() and hashCode() in Java are not consistent with one another?
+Explain in one or two sentences.
+
+Q9 Answer: Two objects when equals() return false may return the same hashCode() will cause search in hashmap slowly; or two objection with same equals() return different hashCode() which is not allowed in hash.
+
+
+Q10.	(2 points) A hashCode method is implemented the following way:
+	public int hashCode() {
+		return 0;
+	}
+Is such an implementation correct (e.g., will the methods relying on it still work correctly)? 
+If so, how well will such an implementation perform in places where it is used (one or two sentences)?
+
+Q10 Answer: It's a correct implementation. For a well case example, all the Objects in this Class are the same and equals, so they return the same hashCode 0.
+
+
+Q11.	(2 points) The objects of some class are not Comparable. Can a bunch of such objects be used in a data structure like a
+TreeMap? Motivate your answer in one or two sentences.
+
+Q11 Answer:  No, all keys inserted into the TreeMap must implement the Comparable interface. Furthermore, all such keys must be mutually comparable.
+
+
+Q12.	(2 points) What is the difference between static factory methods and constructors? Explain in one or two sentences.
+
+Q12 Answer: A constructor is used to construct an object in public or this private class. While, static factory methods are used to set a object will/had been constructed by a constructor, as it may be likely to yield significantly better space and time performance.
+
+
